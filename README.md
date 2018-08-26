@@ -35,7 +35,8 @@ npm install --production
 Self-signed certificate
 
 ```bash
-sudo openssl req -new -x509 -sha256 -newkey rsa:2048 -days 365 -nodes -out /etc/nginx/ssl/nginx.pem -keyout /etc/nginx/ssl/nginx.key
+sudo openssl req -new -x509 -sha256 -newkey rsa:2048 -days 365 -nodes \
+-out /etc/nginx/ssl/nginx.pem -keyout /etc/nginx/ssl/nginx.key
 sudo chmod 400 ./*
 ```
 
